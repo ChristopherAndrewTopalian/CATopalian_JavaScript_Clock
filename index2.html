@@ -1,0 +1,111 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- index.html -->
+
+<html>
+<head>
+<title> index </title>
+
+<style>
+
+body
+{
+    background-color: rgb(40, 40, 40);
+    background-image: url('src/media/textures/code.png');
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.appButton
+{
+    background-color: rgb(5, 5, 84);
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.appButton:hover
+{
+    border-color: rgb(0, 255, 255);
+    color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+.appButton:active
+{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+</style>
+
+<script>
+
+function ge(whichId)
+{
+    let result = document.getElementById(whichId);
+
+    return result;
+}
+
+function ce(whichType)
+{
+    let result = document.createElement(whichType);
+
+    return result;
+}
+
+function ba(whichElement)
+{
+    let result = document.body.append(whichElement);
+
+    return result;
+}
+
+function createWindow()
+{
+    let newWindow = window.open(
+        'CATopalian_JavaScript_Clock.html',
+        '',
+        'left=5 top=5 width=440, height=115',
+        true
+    );
+
+    // wait a specified duration and then remove the launcher
+    setTimeout(function()
+    {
+        window.close();
+    }, 500);
+}
+
+function makeAppButton()
+{
+    let appButton = ce('button');
+    appButton.textContent = 'CATopalian JavaScript Clock';
+    appButton.className = 'appButton';
+    appButton.style.position = 'fixed';
+    appButton.style.left = '20px';
+    appButton.style.top = '20px';
+    appButton.onclick = function()
+    {
+        createWindow();
+    };
+    ba(appButton);
+}
+
+</script>
+
+</head>
+
+<body onload = 'makeAppButton();'>
+
+</body>
+
+</html>
+
