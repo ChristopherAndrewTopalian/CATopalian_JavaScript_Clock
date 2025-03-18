@@ -1,6 +1,8 @@
 # CATopalian JavaScript Clock
 A JavaScript application that shows the time in 12 hour AM/PM format.  
 
+USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_Clock/CATopalian_JavaScript_Clock.html
+
 If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)  
 
 ---
